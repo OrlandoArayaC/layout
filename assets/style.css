@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 250px 2fr;
+    gap: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    font-size: 18px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto {
+    display: flex;
+    gap: 5px;
+    grid-area: producto;
+    padding: 10px;
+    text-align: start;
+}
+
+.producto .cantidad{
+    color: #8787A3;
+}
+
+.productcard{
+    width: 100px;
+    height: auto;
+}
+
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
